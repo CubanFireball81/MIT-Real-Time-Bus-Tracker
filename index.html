@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +11,26 @@
 
     <title>Map Animation</title>
 </head>
+
 <body>
-    <div id="map"></div>
-    <div class="map-overlay top">
-        <button style="font-size: 2em" onclick="move()">
-            Show stops between MIT and Harvard
-        </button>
+    <div class="sidebar">
+        <div class="sideBarTop">
+            <h2 class="sideHeading">Start Route:</h2>
+            <button class="runRoute" onclick="move()">
+                MIT to Harvard Stops
+            </button>
+            <button class="runRoute" onclick="move2()">
+                Harvard to MIT Stops
+            </button>
+        </div>
+        <div class="sideBarBottom">
+            <h3 id="location"></h3>
+        </div>
     </div>
+
+    <div id="map"></div>
+
     <script src="./script.js"></script>
 </body>
+
 </html>

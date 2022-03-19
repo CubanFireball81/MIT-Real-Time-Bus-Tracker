@@ -1,17 +1,65 @@
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    display: flex;
 }
+
+
 
 #map {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
+    /* margin-left: 200px; */
+    padding: 1px 16px;
+    height: 100vh;
+    z-index: 1;
 }
 
-.map-overlay {
-    position: absolute;
+.runRoute {
+    font-size: medium;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.runRoute:hover {
+    transform: scale(1.2);
+    color: green;
+    border: 2px solid rgb(0, 255, 0);
+}
+
+.sideBarTop {
+    position: relative;
     left: 0;
     padding: 10px;
+    color: rgb(255, 255, 255)
+}
+
+.sideBarBottom {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 5px 2px rgb(0, 0, 0);
+    font-size: larger;
+}
+
+.sidebar {
+    padding: 10px;
+    top: 30%;
+    width: 200px;
+    position: fixed;
+    height: 30vh;
+    border-radius: 0 15px 15px 0;
+    background-color: rgba(95, 97, 95, 0.6);
+    z-index: 100;
+    align-items:flex-start;
+    left: -200px;
+    transition: 0.5s;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.sidebar:hover {
+    left: 0
 }
