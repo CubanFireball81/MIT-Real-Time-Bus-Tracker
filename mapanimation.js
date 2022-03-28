@@ -6,7 +6,7 @@ let runStatus = false;
 var runTimeout;
 var refreshTimeout;
 const refreshRate = 10000; // milliseconds
-mapboxgl.accessToken = 'pk.eyJ1IjoiY3ViYW5maXJlYmFsbDgxIiwiYSI6ImNrd2E2YjZ4ZzFuMjAzMm84enZwOHFtaWoifQ.T0AG_7RahFHKmRfTAMPoag';
+mapboxgl.accessToken = 'INSERT_YOUR_MAPBOX_API_KEY_HERE';
 
 // DOM elements
 let lastUpdated = document.getElementById('lastUpdated');
