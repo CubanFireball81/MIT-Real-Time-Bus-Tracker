@@ -1,5 +1,3 @@
-import API_KEY from './apikey.j';
-
 // This array contains the coordinates for all bus stops between MIT and Harvard
 const busStops = [
     [-71.093729, 42.359244],
