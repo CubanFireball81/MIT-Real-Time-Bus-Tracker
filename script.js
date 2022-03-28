@@ -15,7 +15,7 @@ const busStops = [
 ];
 
 // Add your own access token
-mapboxgl.accessToken = process.env.MY_SECRET;
+mapboxgl.accessToken = process.env.API_Key;
 // mapboxgl.accessToken = 'pk.eyJ1IjoiY3ViYW5maXJlYmFsbDgxIiwiYSI6ImNrd2E2YjZ4ZzFuMjAzMm84enZwOHFtaWoifQ.T0AG_7RahFHKmRfTAMPoag';
 
 // This is the map instance
