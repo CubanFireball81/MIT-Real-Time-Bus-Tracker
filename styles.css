@@ -42,18 +42,22 @@ body {
     color: rgb(255, 255, 255);
     text-shadow: 0 5px 2px rgb(0, 0, 0);
     font-size: larger;
+    text-align: center;
+    height: auto;
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     top: 30%;
     width: 200px;
     position: fixed;
-    height: 30vh;
+    height: auto;
     border-radius: 0 15px 15px 0;
     background-color: rgba(95, 97, 95, 0.6);
     z-index: 100;
-    align-items:flex-start;
+    align-items: center;
     left: -200px;
     transition: 0.5s;
     text-align: center;
@@ -62,4 +66,14 @@ body {
 
 .sidebar:hover {
     left: 0
+}
+
+@media (max-height: 880px) {
+    .runRoute {
+        font-size: medium;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
 }
