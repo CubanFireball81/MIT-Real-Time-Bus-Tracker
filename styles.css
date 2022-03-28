@@ -41,13 +41,13 @@ body {
     position: fixed;
     height: auto;
     border-radius: 0 15px 15px 0;
-    background-color: rgba(95, 97, 95, 0.6);
+    background-color: rgba(34, 34, 34, 0.822);
     z-index: 100;
     align-items: center;
     left: -200px;
     transition: 0.5s;
     text-align: center;
-    border: 1px solid white;
+    box-shadow: 2px 5px 5px rgba(255, 255, 255, 0.75);
 }
 
 .sidebar:hover {
@@ -97,13 +97,14 @@ button:hover,
 }
 
 .mapboxgl-ctrl>button:hover {
-    background-color: cornflowerblue !important;
+    background-color: rgb(0, 255, 0) !important;
 }
 
 .buttonEffect {
-    background-color: transparent !important;
-    border-color: cornflowerblue !important;
-    color: cornflowerblue !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border-color: rgb(190, 8, 8) !important;
+    color: rgb(190, 8, 8) !important;
+    font-size: 20px;
 }
 
 

@@ -12,12 +12,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY3ViYW5maXJlYmFsbDgxIiwiYSI6ImNrd2E2YjZ4ZzFuM
 let lastUpdated = document.getElementById('lastUpdated');
 const displayBtn = document.getElementById('displayBtn');
 const runBtn = document.getElementById('runBtn');
-// const refreshCountdown = document.getElementById('refreshTimer');
 const pText = document.getElementsByTagName('p');
 const h5Text = document.getElementsByTagName('h5');
-
-// Initialize refresh countdown timer
-// refreshCountdown.innerText = refreshTimer;
 
 // Random color generator
 const randomColor = () => {
@@ -108,10 +104,9 @@ const toggleStatus = () => {
     if (!runStatus) {
         runStatus = !runStatus;
         runBtn.innerText = 'Live';
-        runBtn.onclick = '';
+        runBtn.onclick = toggleStatus;
         runBtn.classList.add('buttonEffect');
         run();
-        return
     }
 }
 
@@ -128,9 +123,9 @@ const displayMode = () => {
         clearMap();
         map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11',
-            center: [-71.093729, 42.359244],
-            zoom: 20,
+            style: 'mapbox://styles/mapbox/streets-v9',
+            center: [-71.104081, 42.365554],
+            zoom: 12,
         }).addControl(new mapboxgl.NavigationControl());
         darkMode = !darkMode;
         displayBtn.innerHTML='Dark Mode';
