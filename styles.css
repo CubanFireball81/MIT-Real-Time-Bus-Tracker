@@ -12,7 +12,6 @@ body {
     top: 0;
     bottom: 0;
     width: 100vw;
-    /* margin-left: 200px; */
     padding: 1px 16px;
     height: 100vh;
     z-index: 1;
@@ -20,8 +19,8 @@ body {
 
 .runRoute {
     font-size: medium;
-    margin-top: 50px;
     padding: 10px;
+    margin: 10px;
     border-radius: 15px;
 }
 
@@ -70,9 +69,9 @@ body {
 
 @media (max-height: 880px) {
     .runRoute {
-        font-size: medium;
-        margin-top: 10px;
+        font-size: small;
         padding: 10px;
+        margin: 10px;
         border-radius: 15px;
     }
 

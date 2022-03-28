@@ -21,10 +21,11 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY3ViYW5maXJlYmFsbDgxIiwiYSI6ImNrd2E2YjZ4ZzFuM
 let map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/dark-v10',
-    center: [-71.104081, 42.365554],
+    center: [-71.093729, 42.359244],
     zoom: 14,
 });
 
+-71.104081, 42.365554
 // Add a marker to the map at the first coordinates in the array busStops. The marker variable should be named "marker"
 let marker = new mapboxgl.Marker({color: "red"}).setLngLat(busStops[0]).addTo(map);
 // counter here represents the index of the current bus stop
