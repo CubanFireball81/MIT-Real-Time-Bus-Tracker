@@ -9,28 +9,38 @@
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
     <link href="./styles.css" rel="stylesheet" />
 
-    <title>Map Animation</title>
+    <title>Real-Time Bus Tracker</title>
 </head>
 
 <body>
+    <div id="map"></div>
     <div class="sidebar">
         <div class="sideBarTop">
-            <h2 class="sideHeading">Start Route:</h2>
-            <button class="runRoute" onclick="move()">
-                MIT to Harvard Stops
-            </button>
-            <button class="runRoute" onclick="move2()">
-                Harvard to MIT Stops
-            </button>
+
+            <div>
+            <div class="displayMode">
+                <button id="displayBtn" onclick="displayMode();buttonEffect('displayBtn')">Mode</button>
+            </div>
+            <div id="runBtnContainer">
+                <button id="runBtn" class='' onclick="toggleStatus();timer();buttonEffect('runBtn')">Start</button>
+                <p>Live updates every 10 seconds</p>
+            </div>
+            <p>Updated: </p>
+            <p><span id="lastUpdated">Not Running</span></p>
         </div>
-        <div class="sideBarBottom">
-            <h3 id="location"></h3>
-        </div>
+        <h6>MBTA Bus Lines</h6>
+        <ul id="list">
+        </ul>
     </div>
+    <footer class="copyright">
+        <p>
+            <a href="https://github.com/CubanFireball81/MIT-Real-Time-Bus-Tracker" target="_blank" rel="noreferrer noopener">
+                &copy Alejandro Santiago
+            </a>
+        </p>
+    </footer>
 
-    <div id="map"></div>
-
-    <script src="./script.js"></script>
+    <script src="./mapanimation.js"></script>
 </body>
 
 </html>

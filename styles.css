@@ -1,3 +1,4 @@
+/* General Styling */
 body {
     margin: 0;
     padding: 0;
@@ -5,31 +6,17 @@ body {
     display: flex;
 }
 
-
-
+/* MAP BACKGROUND */
 #map {
     position: absolute;
     top: 0;
     bottom: 0;
     width: 100vw;
-    padding: 1px 16px;
     height: 100vh;
     z-index: 1;
 }
 
-.runRoute {
-    font-size: medium;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 15px;
-}
-
-.runRoute:hover {
-    transform: scale(1.2);
-    color: green;
-    border: 2px solid rgb(0, 255, 0);
-}
-
+/* SIDEBAR MENU SECTION */
 .sideBarTop {
     position: relative;
     left: 0;
@@ -66,6 +53,73 @@ body {
 .sidebar:hover {
     left: 0
 }
+
+.displayMode {
+    margin: 10px 0;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    margin-left: -2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* BUTTON STYLING */
+button {
+    width: 100px;
+    height: min-content;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(190, 8, 8);
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover,
+.mapboxgl-ctrl>button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(190, 8, 8);
+}
+
+.mapboxgl-ctrl>button:hover {
+    background-color: cornflowerblue !important;
+}
+
+.buttonEffect {
+    background-color: transparent !important;
+    border-color: cornflowerblue !important;
+    color: cornflowerblue !important;
+}
+
+
+
+/* FOOTER SECTION */
+
+.copyright a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
 
 @media (max-height: 880px) {
     .runRoute {
